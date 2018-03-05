@@ -8,7 +8,9 @@
       <img :src="item.images" class="articleListimage">
     </div>
    </div>
+   <transition name="el-zoom-in-bottom">
    <el-button @click="getNextDay" v-show="showButton" class="next"type="primary" icon="el-icon-caret-bottom"></el-button>
+   </transition>
   </div>
   </div>
 </template>
@@ -87,7 +89,7 @@ export default {
 }
 .next{
 position:fixed;
-margin-left:calc( 50% - 30px );
+margin-left:43% ;
 left:0;
 bottom:0;
 width:60px;

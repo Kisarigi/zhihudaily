@@ -39,7 +39,7 @@ export default {
 
   },
   mounted(){
-     
+
   },
 
 }
@@ -57,8 +57,8 @@ export default {
   margin-top:10px;
 }
 .edavatar{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   vertical-align: middle;
   border-radius: 50%;
   overflow: hidden;
