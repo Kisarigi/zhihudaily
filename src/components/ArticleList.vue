@@ -9,7 +9,7 @@
     </div>
    </div>
    <transition name="el-zoom-in-bottom">
-   <el-button @click="getNextDay" v-show="showButton" class="next"type="primary" icon="el-icon-caret-bottom"></el-button>
+   <el-button @click="getNextDay" v-show="showButton" class="next1"type="primary" icon="el-icon-caret-bottom"></el-button>
    </transition>
   </div>
   </div>
@@ -40,7 +40,11 @@ export default {
          this.$store.commit('setArticleId', id);
        },
     handleScroll(){
-      if(document.documentElement.clientHeight+document.documentElement.scrollTop==document.documentElement.scrollHeight){
+      let  atemp=document.documentElement.clientHeight||document.body.clientHeight;
+      let  btemp=document.documentElement.scrollTop||document.body.scrollTop;
+      let  ctemp=document.documentElement.scrollHeight||document.body.scrollHeight;
+      if(atemp+btemp==ctemp){
+        //document.documentElement.clientHeight+document.documentElement.scrollTop==document.documentElement.scrollHeight
         //当滚动条到达底部时 弹出
         if(this.$store.state.currentIndex==-1){
          this.showButton=true;
@@ -84,18 +88,15 @@ export default {
 .listTime{
   background:#fff;
   margin-bottom: 20px;
-  font-size: 25px;
+  font-size: 20px;
+  font-style:oblique;
 
 }
-.next{
+.next1{
 position:fixed;
-margin-left:43% ;
-left:0;
-bottom:0;
+left: calc( 50% - 30px);
+bottom:1%;
 width:60px;
-height:30px;
-
-
 }
 .articleList {
   margin-top: 10px;

@@ -1,6 +1,6 @@
 <template>
  <div  class="home">
-    <div class="home-content" >
+    <div class="home-content">
       <div class="header">
         <i  @click="showSideBar" class="el-icon-menu">
         </i>
