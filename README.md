@@ -2,7 +2,7 @@
 ## 项目描述
 基于Vue2.0+Vue-cli+Vuex+Vue-router+Element-UI+axios<br>
 后台要感谢[Trevor](https://segmentfault.com/a/1190000009242864)提供的解决了跨域问题的知乎日报Api。<br>
-移动端访问体验更佳，[查看演示](https://kisarigi.github.io/test/#/home)（leancloud已挂，目前此项目处于后台api失效状态-2018/3/13）
+移动端访问体验更佳，[查看演示](https://kisarigi.github.io/test/#/home)（leancloud已挂，目前此项目处于后台api失效状态-2018/3/13）<br>
 2018/3/20 自己用node写了转发请求的后台，[新的演示地址](http://120.79.255.147/)
 
 ## 项目中踩的一些坑
@@ -13,7 +13,7 @@
 ## 有待完善的地方
 1.header没有写成组件。重构应该抽象成组件。<br>
 2.只能获取当日数据，应当加上对于Api里时间戳的处理，与下拉加载往日文章的功能。(已解决)<br>
-3.后台转发的api托管在leancloud上，是开发版，24小时中会有6小时无法访问，报503错误。等我自己买了服务器，会重新部署在服务器上<br>
+3.后台转发的api托管在leancloud上，应当部署在服务器上（已解决，阿里云云翼计划了解一下0.0）<br>
 
 
 ## 启动方法
