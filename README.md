@@ -3,6 +3,7 @@
 基于Vue2.0+Vue-cli+Vuex+Vue-router+Element-UI+axios<br>
 后台要感谢[Trevor](https://segmentfault.com/a/1190000009242864)提供的解决了跨域问题的知乎日报Api。<br>
 移动端访问体验更佳，[查看演示](https://kisarigi.github.io/test/#/home)（leancloud已挂，目前此项目处于后台api失效状态-2018/3/13）
+2018/3/20 自己用node写了转发请求的后台，[新的演示地址](http://120.79.255.147/)
 
 ## 项目中踩的一些坑
 1.知乎日报的图片链接有防盗链机制，使用以下meta标签设置\<meta name="referrer" content="never">，服务器会认为是浏览器直接打开了文件，所以可以正常显示，解决问题。<br>
